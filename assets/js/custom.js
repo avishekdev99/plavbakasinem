@@ -1,12 +1,15 @@
 
 $(document).ready(function() {
   $('.moreless-button').click(function() {
-      $('.moretext').slideToggle();
-      if ($(this).text() == "Read more") {
-          $(this).text("Read less");
-      } else {
-          $(this).text("Read more");
-      }
+    var $this = $(this);
+    var $moreText = $this.closest('.mediterranean-text').find('.moretext');
+  
+    $moreText.slideToggle();
+    if ($this.text() == "Read less") {
+      $this.text("Read More");
+    } else {
+      $this.text("Read less");
+    }
   });
 });
 
@@ -25,7 +28,6 @@ function toggleAccordion() {
 }
 
 items.forEach(item => item.addEventListener('click', toggleAccordion));
-
 
 
 

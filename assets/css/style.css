@@ -1,0 +1,717 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+ul{
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    width: 100%;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "Urbanist", sans-serif;
+}
+.ptb-70{
+    padding: 70px 0;
+}
+/* header css start */
+.site-header{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px 0;
+}
+.site-header ul.navbar-nav li a.nav-link {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #111111;
+    padding: 0;
+}
+.site-header ul.navbar-nav li{
+    padding: 0 15px;
+}
+
+.site-header nav.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+/* header css end */
+
+
+/* banner section css start */
+.site-banner{
+    background-image: url(../images/hero-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    position: relative;
+}
+.site-banner::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* background-color: #005edc; */
+    background-color: #000;
+    opacity: 0.5;
+}
+.banner-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.banner-text{
+    max-width: 800px;
+    padding: 0 20px ;
+    margin: 0 auto;
+    text-align: center;
+}
+.banner-text h1 {
+    font-size: 70px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+.banner-text p{
+    font-size: 25px;
+    color: #eee;
+    font-weight: 500;
+}
+/* banner section csss end */
+/* top section css start */
+.top-wrap{
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fff;
+}
+.top-wrap p{
+    font-size: 18px;
+    line-height: 1.7;
+    color: #777;
+    margin-bottom: 0;
+}
+
+/* top section css end */
+
+/* link card section css start */
+.link-sec{
+    background-color: #F6FBFF;
+}
+.link-wrap{
+    background-image: url(../images/link-card-01.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+    transition: all 0.3s linear;
+}
+
+.link-wrap::before, .link-wrap::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 0.4;
+    transition: all 0.3s linear;
+}
+.link-wrap::after{
+    height: 0;
+}
+.link-wrap:hover::after{
+    height: 100%;
+    }
+.link-wrap a{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.link-text {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 10px;
+}
+.link-wrap:hover h3{
+    text-decoration: underline;
+}
+.link-text h3 {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 700;
+}
+
+/* link card section css end */
+/* sign up section css start */
+.signup-wrap form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.signup-group {
+    width: 21%;
+}
+.signup-group input, .signup-group select{
+    height: 45px;
+    width: 100%;
+    border: 1px solid #cdcfd1;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    color:#777;
+}
+.signup-btn{
+    width: 10%;
+}
+.signup-btn button {
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    background: #ff6b00;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    
+}
+.signup-btn button::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    transform: scale(0,0);
+    z-index: -1;
+    transition: all 500ms ease;
+    background-color: #000;
+    border: 2px solid #000;
+}
+.signup-btn button:hover::before {
+    transform: scale(1,1);
+}
+.signup-heading h4 {
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+/* sign up section css start */
+
+/* why with us section css start */
+.why-with-sec{
+    background-color: #F6FBFF;
+}
+.site-heading h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #111;
+}
+.why-with-sec .row{
+    margin-top: 50px;
+}
+.why-with-sec .col-lg-4{
+    margin-bottom: 30px;
+}
+.why-wrap {
+    position: relative;
+    display: block;
+    background: #fff;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
+    padding: 50px 30px 45px 30px;
+    transition: all 500ms ease;
+    height: 100%;
+}
+.why-wrap:hover{
+    transform: translateY(-10px);
+}
+.why-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    background-color: #ff6b00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.why-icons{
+    background-image: url(../images/cruise.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+}
+.why-text {
+    text-align: center;
+}
+.why-text h4 {
+    font-size: 25px;
+    color: #111;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.why-text p {
+    color: #6a6a6a;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+/* why with us section css end */
+/* newsletter section css start */
+.newsletter-wrap{
+    background-color: #ff6b00;
+    padding: 53px 60px;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.newsletter-text h3 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.newsletter-text p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 0;
+    text-align: center;
+}
+.newsletter-form {
+    max-width: 85%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.newsletter-group input {
+    width: 75%;
+    position: relative;
+    display: block;
+    height: 45px;
+    background: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #9F9D9D;
+    padding: 10px 20px;
+    transition: all 500ms ease;
+    border: none;
+}
+.newsletter-group button {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 500;
+    text-align: center;
+    background: #111111;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 500ms ease;
+    width: 22%;
+    height: 45px;
+    border: none;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.newsletter-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.newsletter-group button::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    transform: scale(0,0);
+    z-index: -1;
+    transition: all 500ms ease;
+    background-color: #fff;
+}
+.newsletter-group button:hover::before{
+    transform: scale(1,1);
+}
+.newsletter-group button:hover{
+    background-color: #fff;
+    color: #000;
+}
+/* newsletter section css end */
+
+/* faq section css start */
+.faq-sec, .bg-one{
+    background-color: #F6FBFF;
+}
+.faq-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.accordion .accordion-item {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .accordion .accordion-item button[aria-expanded=true] {
+    border-bottom: 1px solid #ff6b00;
+  }
+  .accordion button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: #7288a2;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  .accordion button:hover, .accordion button:focus {
+    cursor: pointer;
+    color: #ff6b00;
+  }
+  .accordion button:hover::after, .accordion button:focus::after {
+    cursor: pointer;
+    color: #ff6b00;
+    border: 1px solid #ff6b00;
+  }
+  .accordion button .accordion-title {
+    padding: 1em 1.5em 1em 0;
+  }
+  .accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+  }
+  .accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+  }
+  .accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+  }
+  .accordion button[aria-expanded=true] {
+    color: #ff6b00;
+  }
+  .accordion button[aria-expanded=true] .icon::after {
+    width: 0;
+  }
+  .accordion button[aria-expanded=true] + .accordion-content {
+    opacity: 1;
+    max-height: 9em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+  }
+  .accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+  }
+  .accordion .accordion-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 2em 0;
+  }
+
+/* faq section css end */
+
+/* footer section css start */
+.site-footer{
+    position: relative;
+    background: #191919;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+
+.pattern-layer {
+
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 560px;
+    background-image: url(https://wp1.themevibrant.com/newwp/travic/wp-content/uploads/2023/11/shape-5.png);
+    background-repeat: repeat-x;
+    background-position: bottom center;
+    animation: slide 60s linear infinite;
+}
+
+
+
+@keyframes slide{
+    from { background-position: 0 0; }
+      to { background-position: 1920px 0; }
+  }
+  
+  @-webkit-keyframes slide{
+    from { background-position: 0 0; }
+      to { background-position: 1920px 0; }
+  }
+
+.site-footer .container{
+    position: relative;
+}
+
+.disclaimer-text h4, .footer-wrap h4 {
+    font-size: 25px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.disclaimer-text p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+.footer-links ul li a {
+    font-size: 16px;
+    color: #fff;
+}
+.footer-links ul li a:hover{
+    color: #ff6b00;
+}
+.footer-links ul li{
+    margin-bottom: 15px;
+}
+.social-links ul li a {
+    border: 2px solid #fff;
+    height: 40px;
+    width: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #fff;
+    padding: 5px;
+    transition: all 0.3s linear;
+}
+.social-links ul li a:hover{
+    background-color: #ff6b00;
+    border-color: #ff6b00;
+}
+.social-links ul {
+    display: flex;
+    align-items: center;
+}
+.social-links ul li {
+    padding-right: 15px;
+}
+.copy-right {
+    margin-top: 50px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.copy-right p {
+    color: #fff;
+    margin-bottom: 0;
+}
+/* footer section css end */
+
+
+/* sub pages css start */
+.mediterranean-main  .site-heading {
+    margin-bottom: 50px;
+}
+.mediterranean-img{
+    background-image: url(../images/Mediterranean-card-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.mediterranean-wrap{
+    display: flex;
+    justify-content: center;
+    box-shadow: rgb(100 100 111 / 10%) 0px 7px 29px 0px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+
+}
+.mediterranean-left{
+    width: 50%;
+}
+.mediterranean-right{
+    width: 50%;
+    padding: 25px;
+}
+.mediterranean-text h4 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 0px;
+    line-height: 1.1;
+}
+.mediterranean-text h5 {
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #111;
+    font-weight: 500;
+}
+.mediterranean-text p {
+    color: #7A7A7A;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+.mediterranean-text strong{
+    color: #111;
+}
+.cruise-loc {
+    margin: 15px 0;
+}
+.mediterranean-text ul{
+    margin: 10px 0;
+    padding-left: 20px;
+    list-style: disc;
+}
+.mediterranean-text ul li{
+    font-size: 16px;
+    color: #7A7A7A;
+    padding: 4px 0;
+}
+.mediterranean-text ul li::marker{
+    color: #111;
+}
+.view-btns a, .view-btns a.viewmore{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 500;
+    text-align: center;
+    background: #111111;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 500ms ease;
+    border: none;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding: 10px 30px;
+    margin-right: 10px;
+}
+.view-btns a.viewmore{
+    background-color: #ff6b00;
+    color: #fff;
+}
+.view-btns a::before, .view-btns a.viewmore::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    transform: scale(0, 0);
+    z-index: -1;
+    transition: all 500ms ease;
+    background-color: #ff6b00;
+}
+.view-btns a.viewmore::before{
+    background-color: #111;
+}
+.view-btns a:hover::before, .view-btns a.viewmore:hover::before{
+    transform: scale(1, 1);
+
+}
+.view-btns a:hover{
+    background-color: #ff6b00;
+    color: #fff;
+}
+.view-btns {
+    margin-top: 30px;
+    border-top: 1px solid #777;
+    padding-top: 30px;
+}
+.moretext{
+    display: none;
+}
+/* sub pages css end */

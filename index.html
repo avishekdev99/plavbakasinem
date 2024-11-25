@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <link rel="icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/media.css">
-    <title>Home</title>
+    <title>Domovská Stránka</title>
   </head>
   <body>
     <!-- header section start -->
@@ -34,7 +36,7 @@
                     <a class="nav-link" href="nordic.html">Nordický </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">O Nás </a>
+                    <a class="nav-link" href="about-us.html">O Nás </a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="contact-us.html">Kontaktujte Nás </a>
@@ -50,7 +52,7 @@
     <!-- banner section start -->
     <div class="site-banner">
         <div class="banner-wrap">
-             <div class="banner-text">
+             <div class="banner-text" data-aos="fade-up">
                 <h1>
                     Plavba Kasinem
                 </h1>
@@ -85,7 +87,7 @@
     <div class="link-sec ptb-70">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-6"  data-aos="fade-right">
                     <div class="link-wrap link-one">
                         <a href="mediterranean.html">
                             <div class="link-text">
@@ -96,7 +98,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-6" data-aos="fade-right">
                     <div class="link-wrap link-two">
                         <a href="caribbean.html">
                             <div class="link-text">
@@ -107,7 +109,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-6"  data-aos="fade-left">
                     <div class="link-wrap link-three">
                         <a href="casino.html">
                             <div class="link-text">
@@ -118,7 +120,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-6" data-aos="fade-left">
                     <div class="link-wrap link-four">
                         <a href="nordic.html">
                             <div class="link-text">
@@ -135,7 +137,7 @@
     <!-- link card section end -->
 
     <!-- sign up section start -->
-    <div class="signup-sec ptb-70">
+    <div class="signup-sec ptb-70" data-aos="fade-up">
         <div class="container">
             <div class="signup-heading">
                 <h4>
@@ -143,23 +145,44 @@
                 </h4>
             </div>
             <div class="signup-wrap">
-                <form>
+                <form id="signupForm">
                     <div class="signup-group">
-                        <input type="text" placeholder="First Name ">
+                        <input 
+                            type="text" 
+                            id="firstName" 
+                            placeholder="Křestní jméno" 
+                            required 
+                            pattern="[A-Za-z\s]+" 
+                            title="First Name should only contain letters and spaces."
+                        >
                     </div>
                     <div class="signup-group">
-                        <input type="text" placeholder="Last Name ">
+                        <input 
+                            type="text" 
+                            id="lastName" 
+                            placeholder="Příjmení" 
+                            required 
+                            pattern="[A-Za-z\s]+" 
+                            title="Last Name should only contain letters and spaces."
+                        >
                     </div>
                     <div class="signup-group">
-                        <input type="email" placeholder="Email Address ">
+                        <input 
+                            type="email" 
+                            id="email" 
+                            placeholder="E-mailová adresa" 
+                            required
+                        >
                     </div>
                     <div class="signup-group">
-                       <select>
-                        <option>India</option>
-                       </select>
+                        <select id="country" required>
+                            <option value="">Vyberte zemi</option>
+                            <option value="India">India</option>
+                            <!-- Add more countries as needed -->
+                        </select>
                     </div>
-                    <div class="signup-btn">
-                        <button>Sign Up</button>
+                    <div class="signup-btn " data-aos="fade-left">
+                        <button type="submit">Zaregistrujte se</button>
                     </div>
                 </form>
             </div>
@@ -176,7 +199,7 @@
                 </h2>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="col-lg-4 col-md-6 col-sm-6" data-aos="fade-up">
                     <div class="why-wrap">
                         <div class="why-icon">
                             <div class="why-icons why-one"></div>
@@ -196,7 +219,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="col-lg-4 col-md-6 col-sm-6" data-aos="fade-up">
                     <div class="why-wrap">
                         <div class="why-icon">
                             <div class="why-icons why-two"></div>
@@ -216,7 +239,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="col-lg-4 col-md-6 col-sm-6" data-aos="fade-up">
                     <div class="why-wrap">
                         <div class="why-icon">
                             <div class="why-icons why-three"></div>
@@ -236,7 +259,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="col-lg-4 col-md-6 col-sm-6" data-aos="fade-up">
                     <div class="why-wrap">
                         <div class="why-icon">
                             <div class="why-icons why-four"></div>
@@ -257,7 +280,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="col-lg-4 col-md-6 col-sm-6" data-aos="fade-up">
                     <div class="why-wrap">
                         <div class="why-icon">
                             <div class="why-icons why-five"></div>
@@ -280,7 +303,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="col-lg-4 col-md-6 col-sm-6" data-aos="fade-up">
                     <div class="why-wrap">
                         <div class="why-icon">
                             <div class="why-icons why-six"></div>
@@ -308,7 +331,7 @@
     <!-- newsletter section start -->
 
     <div class="newsletter-sec ptb-70">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <div class="newsletter-wrap">
                 <div class="row">
                     <div class="col-lg-12">
@@ -324,11 +347,16 @@
                     </div>
                     <div class="col-md-12">
                         <div class="newsletter-form">
-                            <form >
+                            <form id="newsletterForm">
                                 <div class="newsletter-group">
-                                    <input type="email" placeholder="Email Address*">
-                                    <button>Subscribe</button>
-
+                                    <input 
+                                        type="email" 
+                                        id="email" 
+                                        placeholder="E-mailová adresa*" 
+                                        required 
+                                        title="Please enter a valid email address."
+                                    >
+                                    <button type="submit">Upsat</button>
                                 </div>
                             </form>
                         </div>
@@ -342,7 +370,7 @@
 
     <!-- faq section start -->
     <div class="faq-sec ptb-70">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <div class="site-heading">
                 <h2>
                     Nejčastější Dotazy
@@ -406,7 +434,7 @@
         <div class="pattern-layer"></div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="col-lg-6 col-md-12 col-sm-12" data-aos="fade-right">
                     <div class="disclaimer-text">
                         <h4>
                             Odmítnutí odpovědnosti
@@ -425,10 +453,10 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-6" data-aos="fade-up">
                     <div class="footer-wrap">
                         <h4>
-                            Useful links
+                        Užitečné odkazy
                         </h4>
                         <div class="footer-links">
                             <ul>
@@ -456,10 +484,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-6" data-aos="fade-left">
                     <div class="footer-wrap">
                         <h4>
-                            Follow us
+                            Sledujte nás
                         </h4>
                         <div class="social-links">
                             <ul>
@@ -479,10 +507,10 @@
             </div>
             <div class="copy-right">
                 <p>
-                    Copyright © 2024 plavbakasinem.com. All Rights Reserved
+                Copyright © 2024 plavbakasinem.com. Všechna práva vyhrazena
                 </p>
                 <div class="ssl-logo">
-
+                    <div class="ssl-logo-img"></div>
                 </div>
             </div>
         </div>
@@ -491,8 +519,42 @@
 
     <!-- footer section end -->
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js" ></script>
     <script src="assets/js/custom.js"></script>
+    <script>
+        
+    document.getElementById('signupForm').addEventListener('submit', function(event) {
+        const firstName = document.getElementById('firstName').value.trim();
+        const lastName = document.getElementById('lastName').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const country = document.getElementById('country').value;
+
+        if (!firstName || !lastName || !email || !country) {
+            alert('All fields are required.');
+            event.preventDefault(); // Prevent form submission
+            return;
+        }
+
+        // Additional validation can be added here if needed
+        alert('Form submitted successfully!');
+    });
+    </script>
+        <script>
+            document.getElementById('newsletterForm').addEventListener('submit', function(event) {
+      const email = document.getElementById('email').value.trim();
+
+      // Basic email validation
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!email || !emailPattern.test(email)) {
+          alert('Form submitted successfully!');
+          event.preventDefault(); // Prevent form submission
+          return;
+      }
+
+      alert('Subscription successful!');
+  });
+    </script>
   </body>
 </html>

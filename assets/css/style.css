@@ -43,6 +43,9 @@ h1, h2, h3, h4, h5, h6{
     padding: 0;
     font-weight: 500;
 }
+.site-header ul.navbar-nav li a.nav-link:hover, .site-header ul.navbar-nav li a.nav-link.active{
+    color: #ff6b00;
+}
 .site-header ul.navbar-nav li{
     padding: 0 0.9375rem;
 }
@@ -65,6 +68,15 @@ h1, h2, h3, h4, h5, h6{
     background-size: contain;
     width: 15.625rem;
     height: 3.75rem;
+}
+.site-header.scrolling_down {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9;
+    background: #fff;
+    left: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 /* header css end */
 
@@ -227,7 +239,7 @@ h1, h2, h3, h4, h5, h6{
     color:#777;
 }
 .signup-btn{
-    width: 10%;
+    width: 12%;
 }
 .signup-btn button {
     width: 100%;
@@ -637,6 +649,18 @@ h1, h2, h3, h4, h5, h6{
     color: #fff;
     margin-bottom: 0;
 }
+.ssl-logo-img{
+background-image: url(../images/ssl-logo.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
+height: 100%;
+width: 100%;
+}
+.ssl-logo {
+    height: 4.375rem;
+    width: 4.375rem;
+}
 /* footer section css end */
 
 
@@ -711,7 +735,24 @@ h1, h2, h3, h4, h5, h6{
     background-image: url(../images/casino-card-6.jpeg);
 }
 
-
+.nordic-one{
+    background-image: url(../images/nordic-card-1.webp);
+}
+.nordic-two{
+    background-image: url(../images/nordic-card-2.jpg);
+}
+.nordic-three{
+    background-image: url(../images/nordic-card-3.jpg);
+}
+.nordic-four{
+    background-image: url(../images/nordic-card-4.webp);
+}
+.nordic-five{
+    background-image: url(../images/nordic-card-5.jpg);
+}
+.nordic-six{
+    background-image: url(../images/nordic-card-6.jfif);
+}
 
 
 
@@ -1021,9 +1062,27 @@ margin-bottom: 0.9375rem;
 .casino-banner{
     background-image: url(../images/casino-banner.webp);
 }
-
-
-
+.nordic-banner{
+    background-image: url(../images/nordic-banner.webp);
+}
+.contact-banner{
+    background-image: url(../images/contact-banner.jpg);
+}
+.term-banner{
+    background-image: url(../images/term-banner.jpg);
+}
+.privacy-banner{
+    background-image: url(../images/privacy-banner.webp);
+}
+.personal-banner{
+    background-image: url(../images/personal-banner.jpg);
+}
+.refund-banner{
+    background-image: url(../images/refund-banner.jpg);
+}
 
 
 /* sub banner css end */
+.link-sec, .site-footer{
+    overflow: hidden;
+}

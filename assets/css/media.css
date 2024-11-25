@@ -109,6 +109,14 @@
     .ptb-70 {
         padding: 3rem 0;
     }
+    .copy-right {
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .copy-right p {
+        text-align: center;
+        margin-top: 10px;
+    }
 }
 
 

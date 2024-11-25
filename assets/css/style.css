@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+html{
+    font-size: 16px;
+}
 *{
     margin: 0;
     padding: 0;
@@ -26,26 +29,42 @@ h1, h2, h3, h4, h5, h6{
     font-family: "Urbanist", sans-serif;
 }
 .ptb-70{
-    padding: 70px 0;
+    padding: 4.375rem 0;
 }
 /* header css start */
 .site-header{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding: 20px 0;
+    padding: 1.25rem 0;
 }
 .site-header ul.navbar-nav li a.nav-link {
-    font-size: 16px;
-    text-transform: uppercase;
+    font-size: 1rem;
+    /* text-transform: uppercase; */
     color: #111111;
     padding: 0;
+    font-weight: 500;
 }
 .site-header ul.navbar-nav li{
-    padding: 0 15px;
+    padding: 0 0.9375rem;
 }
 
 .site-header nav.navbar {
     padding-top: 0;
     padding-bottom: 0;
+}
+.site-header .navbar-brand{
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+    font-size: 0;
+    text-decoration: none;
+    white-space: normal;
+    display: inline-block;
+    background-image: url(../images/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 15.625rem;
+    height: 3.75rem;
 }
 /* header css end */
 
@@ -79,37 +98,37 @@ h1, h2, h3, h4, h5, h6{
     position: relative;
 }
 .banner-text{
-    max-width: 800px;
-    padding: 0 20px ;
+    max-width: 50rem;
+    padding: 0 1.25rem;
     margin: 0 auto;
     text-align: center;
 }
 .banner-text h1 {
-    font-size: 70px;
+    font-size: 4.375rem;
     text-transform: uppercase;
     color: #fff;
     font-weight: 800;
     line-height: 1.1;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 .banner-text p{
-    font-size: 25px;
+    font-size: 1.5625rem;
     color: #eee;
     font-weight: 500;
 }
 /* banner section csss end */
 /* top section css start */
 .top-wrap{
-    max-width: 900px;
+    max-width: 56.25rem;
     margin: 0 auto;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    padding: 25px;
+    padding: 1.5625rem;
     border-radius: 10px;
     text-align: center;
     background-color: #fff;
 }
 .top-wrap p{
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.7;
     color: #777;
     margin-bottom: 0;
@@ -122,18 +141,29 @@ h1, h2, h3, h4, h5, h6{
     background-color: #F6FBFF;
 }
 .link-wrap{
-    background-image: url(../images/link-card-01.png);
+    /* background-image: url(../images/link-card-01.png); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
+    height: 25rem;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     position: relative;
     transition: all 0.3s linear;
 }
-
+.link-one{
+    background-image: url(../images/link-card-01.png);
+}
+.link-two{
+    background-image: url(../images/link-card-02.jpg);
+}
+.link-three{
+    background-image: url(../images/link-card-03.jpg);
+}
+.link-four{
+    background-image: url(../images/link-card-04.webp);
+}
 .link-wrap::before, .link-wrap::after{
     content: '';
     position: absolute;
@@ -164,7 +194,7 @@ h1, h2, h3, h4, h5, h6{
     align-items: center;
     justify-content: center;
     height: 100%;
-    padding: 0 10px;
+    padding: 0 0.625rem;
 }
 .link-wrap:hover h3{
     text-decoration: underline;
@@ -172,7 +202,7 @@ h1, h2, h3, h4, h5, h6{
 .link-text h3 {
     margin-bottom: 0;
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 1.5625rem;
     color: #fff;
     font-weight: 700;
 }
@@ -188,12 +218,12 @@ h1, h2, h3, h4, h5, h6{
     width: 21%;
 }
 .signup-group input, .signup-group select{
-    height: 45px;
+    height: 2.8125rem;
     width: 100%;
     border: 1px solid #cdcfd1;
-    padding: 10px;
+    padding: 0.625rem;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 0.875rem;
     color:#777;
 }
 .signup-btn{
@@ -201,12 +231,12 @@ h1, h2, h3, h4, h5, h6{
 }
 .signup-btn button {
     width: 100%;
-    height: 45px;
+    height: 2.8125rem;
     border: none;
     border-radius: 5px;
     background: #ff6b00;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 600;
     color: #fff;
     position: relative;
@@ -232,12 +262,12 @@ h1, h2, h3, h4, h5, h6{
 }
 .signup-heading h4 {
     text-align: center;
-    font-size: 25px;
+    font-size: 1.5625rem;
     text-transform: uppercase;
     font-weight: 700;
     max-width: 50%;
     margin: 0 auto;
-    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;
 }
 /* sign up section css start */
 
@@ -247,16 +277,16 @@ h1, h2, h3, h4, h5, h6{
 }
 .site-heading h2 {
     text-align: center;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 700;
     text-transform: uppercase;
     color: #111;
 }
 .why-with-sec .row{
-    margin-top: 50px;
+    margin-top: 3.125rem;
 }
 .why-with-sec .col-lg-4{
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 .why-wrap {
     position: relative;
@@ -264,24 +294,24 @@ h1, h2, h3, h4, h5, h6{
     background: #fff;
     box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.04);
     border-radius: 10px;
-    padding: 50px 30px 45px 30px;
+    padding: 3.125rem 1.875rem 2.8125rem 1.875rem;
     transition: all 500ms ease;
     height: 100%;
 }
 .why-wrap:hover{
-    transform: translateY(-10px);
+    transform: translateY(-0.625rem);
 }
 .why-icon {
-    width: 100px;
-    height: 100px;
+    width: 6.25rem;
+    height: 6.25rem;
     border-radius: 10px;
     margin: 0 auto;
-    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;
     background-color: #ff6b00;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 0.625rem;
 }
 .why-icons{
     background-image: url(../images/cruise.png);
@@ -291,19 +321,38 @@ h1, h2, h3, h4, h5, h6{
     height: 100%;
     width: 100%;
 }
+.why-one{
+    background-image: url(../images/why1.png);
+}
+.why-two{
+    background-image: url(../images/why2.png);
+}
+.why-three{
+    background-image: url(../images/why3.png);
+}
+.why-four{
+    background-image: url(../images/why4.png);
+}
+.why-five{
+    background-image: url(../images/why5.png);
+}
+.why-six{
+    background-image: url(../images/why6.png);
+}
+
 .why-text {
     text-align: center;
 }
 .why-text h4 {
-    font-size: 25px;
+    font-size: 1.5625rem;
     color: #111;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
 }
 
 .why-text p {
     color: #6a6a6a;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.8;
     margin-bottom: 0;
 }
@@ -311,24 +360,24 @@ h1, h2, h3, h4, h5, h6{
 /* newsletter section css start */
 .newsletter-wrap{
     background-color: #ff6b00;
-    padding: 53px 60px;
+    padding: 3.3125rem 3.75rem;
     border-radius: 10px;
     overflow: hidden;
-    max-width: 850px;
+    max-width: 53.125rem;
     margin: 0 auto;
 }
 
 .newsletter-text h3 {
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 700;
     color: #fff;
     line-height: 1.1;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     text-align: center;
 }
 .newsletter-text p {
     color: #fff;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.7;
     margin-bottom: 0;
     text-align: center;
@@ -336,25 +385,25 @@ h1, h2, h3, h4, h5, h6{
 .newsletter-form {
     max-width: 85%;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 1.875rem;
 }
 
 .newsletter-group input {
     width: 75%;
     position: relative;
     display: block;
-    height: 45px;
+    height: 2.8125rem;
     background: #fff;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 1rem;
     color: #9F9D9D;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     transition: all 500ms ease;
     border: none;
 }
 .newsletter-group button {
-    font-size: 14px;
-    line-height: 30px;
+    font-size: 0.875rem;
+    line-height: 1.875rem;
     font-weight: 500;
     text-align: center;
     background: #111111;
@@ -363,7 +412,7 @@ h1, h2, h3, h4, h5, h6{
     cursor: pointer;
     transition: all 500ms ease;
     width: 22%;
-    height: 45px;
+    height: 2.8125rem;
     border: none;
     text-transform: uppercase;
     position: relative;
@@ -401,9 +450,9 @@ h1, h2, h3, h4, h5, h6{
     background-color: #F6FBFF;
 }
 .faq-wrap {
-    max-width: 900px;
+    max-width: 56.25rem;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 1.875rem;
 }
 .accordion .accordion-item {
     background-color: transparent;
@@ -499,8 +548,8 @@ h1, h2, h3, h4, h5, h6{
 .site-footer{
     position: relative;
     background: #191919;
-    padding-top: 70px;
-    padding-bottom: 50px;
+    padding-top: 4.375rem;
+    padding-bottom: 3.125rem;
 }
 
 
@@ -510,7 +559,7 @@ h1, h2, h3, h4, h5, h6{
     left: 0px;
     bottom: 0px;
     width: 100%;
-    height: 560px;
+    height: 35rem;
     background-image: url(https://wp1.themevibrant.com/newwp/travic/wp-content/uploads/2023/11/shape-5.png);
     background-repeat: repeat-x;
     background-position: bottom center;
@@ -524,46 +573,43 @@ h1, h2, h3, h4, h5, h6{
       to { background-position: 1920px 0; }
   }
   
-  @-webkit-keyframes slide{
-    from { background-position: 0 0; }
-      to { background-position: 1920px 0; }
-  }
+
 
 .site-footer .container{
     position: relative;
 }
 
 .disclaimer-text h4, .footer-wrap h4 {
-    font-size: 25px;
+    font-size: 1.5625rem;
     color: #fff;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
 }
 .disclaimer-text p {
     color: #fff;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.7;
     margin-bottom: 0;
 }
 .footer-links ul li a {
-    font-size: 16px;
+    font-size: 1rem;
     color: #fff;
 }
 .footer-links ul li a:hover{
     color: #ff6b00;
 }
 .footer-links ul li{
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
 }
 .social-links ul li a {
     border: 2px solid #fff;
-    height: 40px;
-    width: 40px;
+    height: 2.5rem;
+    width: 2.5rem;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    font-size: 16px;
+    font-size: 1rem;
     color: #fff;
     padding: 5px;
     transition: all 0.3s linear;
@@ -577,12 +623,12 @@ h1, h2, h3, h4, h5, h6{
     align-items: center;
 }
 .social-links ul li {
-    padding-right: 15px;
+    padding-right: 0.9375rem;
 }
 .copy-right {
-    margin-top: 50px;
+    margin-top: 3.125rem;
     border-top: 1px solid #eee;
-    padding-top: 20px;
+    padding-top: 1.25rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -596,7 +642,7 @@ h1, h2, h3, h4, h5, h6{
 
 /* sub pages css start */
 .mediterranean-main  .site-heading {
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
 }
 .mediterranean-img{
     background-image: url(../images/Mediterranean-card-1.jpg);
@@ -607,6 +653,86 @@ h1, h2, h3, h4, h5, h6{
     width: 100%;
     overflow: hidden;
 }
+.mediterranean-one{
+    background-image: url(../images/Mediterranean-card-1.jpg);
+}
+.mediterranean-two{
+    background-image: url(../images/Mediterranean-card-2.jpg);
+}
+.mediterranean-three{
+    background-image: url(../images/Mediterranean-card-3.avif);
+}
+.mediterranean-four{
+    background-image: url(../images/Mediterranean-card-4.jpg);
+}
+
+.mediterranean-five{
+    background-image: url(../images/Mediterranean-card-5.jpg);
+}
+
+.caribbean-one{
+    background-image: url(../images/caribbean-card-1.jpg);
+}
+.caribbean-two{
+    background-image: url(../images/caribbean-card-2.avif);
+}
+.caribbean-three{
+    background-image: url(../images/caribbean-card-3.jpg);
+}
+.caribbean-four{
+    background-image: url(../images/caribbean-card-4.jpg);
+}
+.caribbean-five{
+    background-image: url(../images/caribbean-card-5.jpg);
+}
+.caribbean-six{
+    background-image: url(../images/caribbean-card-6.avif);
+}
+.casino-one{
+    background-image: url(../images/casino-card-1.jpg);
+}
+
+.casino-one{
+    background-image: url(../images/casino-card-1.jpg);
+}
+.casino-two{
+    background-image: url(../images/casino-card-2.jpg);
+}
+.casino-three{
+    background-image: url(../images/casino-card-3.jpg);
+}
+.casino-four{
+    background-image: url(../images/casino-card-4.jpg);
+}
+.casino-five{
+    background-image: url(../images/casino-card-5.png);
+}
+.casino-six{
+    background-image: url(../images/casino-card-6.jpeg);
+}
+
+
+
+
+
+
+/* .mediterranean-one{
+    background-image: url(../images/Mediterranean-card-1.jpg);
+}
+.mediterranean-one{
+    background-image: url(../images/Mediterranean-card-1.jpg);
+} */
+
+
+
+
+
+
+
+
+
+
+
 .mediterranean-wrap{
     display: flex;
     justify-content: center;
@@ -614,7 +740,7 @@ h1, h2, h3, h4, h5, h6{
     background-color: #fff;
     border-radius: 8px;
     overflow: hidden;
-    margin: 30px 0;
+    margin: 1.875rem 0;
 
 }
 .mediterranean-left{
@@ -622,17 +748,17 @@ h1, h2, h3, h4, h5, h6{
 }
 .mediterranean-right{
     width: 50%;
-    padding: 25px;
+    padding: 1.5625rem;
 }
 .mediterranean-text h4 {
-    font-size: 25px;
+    font-size: 1.5625rem;
     font-weight: 600;
     color: #111;
     margin-bottom: 0px;
     line-height: 1.1;
 }
 .mediterranean-text h5 {
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-bottom: 0;
     color: #111;
     font-weight: 500;
@@ -640,21 +766,21 @@ h1, h2, h3, h4, h5, h6{
 .mediterranean-text p {
     color: #7A7A7A;
     margin-bottom: 0;
-    font-size: 16px;
+    font-size: 1rem;
 }
 .mediterranean-text strong{
     color: #111;
 }
 .cruise-loc {
-    margin: 15px 0;
+    margin: 0.9375rem 0;
 }
 .mediterranean-text ul{
-    margin: 10px 0;
-    padding-left: 20px;
+    margin: 0.625rem 0;
+    padding-left: 1.25rem;
     list-style: disc;
 }
 .mediterranean-text ul li{
-    font-size: 16px;
+    font-size: 1rem;
     color: #7A7A7A;
     padding: 4px 0;
 }
@@ -663,8 +789,8 @@ h1, h2, h3, h4, h5, h6{
 }
 .view-btns a, .view-btns a.viewmore{
     display: inline-block;
-    font-size: 14px;
-    line-height: 30px;
+    font-size: 0.875rem;
+    line-height: 1.875rem;
     font-weight: 500;
     text-align: center;
     background: #111111;
@@ -677,8 +803,8 @@ h1, h2, h3, h4, h5, h6{
     position: relative;
     z-index: 1;
     overflow: hidden;
-    padding: 10px 30px;
-    margin-right: 10px;
+    padding: 0.625rem 1.875rem;
+    margin-right: 0.625rem;
 }
 .view-btns a.viewmore{
     background-color: #ff6b00;
@@ -708,9 +834,9 @@ h1, h2, h3, h4, h5, h6{
     color: #fff;
 }
 .view-btns {
-    margin-top: 30px;
+    margin-top: 1.875rem;
     border-top: 1px solid #777;
-    padding-top: 30px;
+    padding-top: 1.875rem;
 }
 .moretext{
     display: none;
@@ -718,17 +844,17 @@ h1, h2, h3, h4, h5, h6{
 /* sub pages css end */
 /* contact us page css start */
 .contact-wrap{
-    margin: 30px auto;
-    max-width: 900px;
+    margin: 1.875rem auto;
+    max-width: 56.25rem;
 }
 .contact-wrap h4 {
-    font-size: 25px;
+    font-size: 1.5625rem;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     color: #111;
 }
 .contact-wrap p {
-    font-size: 16px;
+    font-size: 1rem;
     color: #6a6a6a;
     margin-bottom: 5px;
 }
@@ -743,14 +869,14 @@ h1, h2, h3, h4, h5, h6{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
-    width: 40px;
+    height: 2.5rem;
+    width: 2.5rem;
     padding: 5px;
     background:#000;
     border-radius: 5px;
     color: #fff;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 1.375rem;
 }
 .contact-social ul li a.fb{
     background: linear-gradient(135deg, #1877f2, #00a3f8);
@@ -765,10 +891,10 @@ h1, h2, h3, h4, h5, h6{
 .contact-social ul {
     display: flex;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 1.875rem;
 }
 .contact-social ul li{
-    padding-right: 15px;
+    padding-right: 0.9375rem;
     transition: all 0.3s linear;
 }
 .contact-social ul li:hover{
@@ -777,24 +903,127 @@ h1, h2, h3, h4, h5, h6{
 
 .contact-form {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding: 30px;
+    padding: 1.875rem;
     border-radius: 10px;
-    margin-top: 30px;
+    margin-top: 1.875rem;
 }
 .contact-group input, .contact-group textarea {
     width: 100%;
-    height: 55px;
+    height: 3.4375rem;
     border: 1px solid #E5E5E5;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #6A6A6A;
-    padding: 10px 30px;
+    padding: 0.625rem 1.875rem;
 }
 .contact-group textarea{
-    height: 200px;
+    height: 12.5rem;
     resize: none;
 }
 .contact-group {
-margin-bottom: 15px;
+margin-bottom: 0.9375rem;
+}
+
+.contact-btn button {
+    font-size: 0.875rem;
+    line-height: 1.875rem;
+    font-weight: 500;
+    text-align: center;
+    background: #111111;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 500ms ease;
+    border: none;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding: 0.625rem 2.1875rem;
+}
+.contact-btn button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #ff6b00;
+    transform: scale(0, 0);
+    z-index: -1;
+    transition: all 500ms linear;
+}
+.contact-btn button:hover::before{
+    transform: scale(1, 1);
+}
+.contact-btn {
+    margin-top: 1.5625rem;
 }
 /* contact us page css end */
+
+/* privacy main section css start */
+.privacy-wrap h4{
+    font-size: 1.5625rem;
+    font-weight: 600;
+    margin-bottom: 0.625rem;
+    color: #111;
+    line-height: 1.1;
+}
+.privacy-wrap p{
+    font-size: 1rem;
+    margin-bottom: 0.625rem;
+    color: #333;
+    line-height: 1.7;
+}
+.privacy-wrap strong{
+    color: #111;
+}
+.privacy-wrap a{
+    color: #111;
+    text-decoration: underline;
+    font-weight: 500;
+}
+.privacy-wrap ul {
+    padding-left: 1.25rem;
+    list-style: disc;
+    margin: 0.625rem 0;
+}
+.privacy-wrap ul li::marker{
+    color: #111;
+}
+.privacy-wrap ul li {
+    font-size: 1rem;
+    color: #333;
+    padding: 4px 0;
+    line-height: 1.7;
+}
+.privacy-wrap {
+    margin: 1.875rem 0;
+}
+/* privacy main section css end */
+
+/* sub banner css start */
+.site-banner.sub-banner {
+    height: 37.5rem;
+}
+.sub-banner .banner-text h1 {
+    font-size: 3.125rem;
+}
+.sub-banner .banner-text p {
+    font-size: 1.25rem;
+}
+.mediterranean-banner{
+    background-image: url(../images/Mediterranean-banner.jpg);
+}
+.caribbean-banner{
+    background-image: url(../images/caribbean-banner.jpg);
+}
+.casino-banner{
+    background-image: url(../images/casino-banner.webp);
+}
+
+
+
+
+
+/* sub banner css end */

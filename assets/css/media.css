@@ -1,0 +1,162 @@
+@media(max-width:1200px){
+    html{
+        font-size: 15px;
+    }
+}
+
+
+@media(max-width:991px){
+    .banner-text h1 {
+        font-size: 3.8rem;
+    }
+    .banner-text p {
+        font-size: 1.3625rem;
+    }
+    .link-wrap {
+        margin: 12px 0;
+    }
+    .signup-heading h4 {
+        max-width: 70%;
+    }
+    .signup-wrap form {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .signup-group {
+        width: 47%;
+        margin: 10px;
+    }
+    .signup-btn {
+        width: auto;
+        margin-top: 15px;
+    }
+    .signup-btn button {
+        height: auto;
+        padding: 13px 35px;
+    }
+    .footer-wrap {
+        margin-top: 30px;
+    }
+    .accordion button[aria-expanded=true] + .accordion-content {
+        max-height: max-content;
+    }
+    .sub-banner .banner-text h1 {
+        font-size: 3rem;
+    }
+    .site-heading h2 {
+        font-size: 2.3rem;
+    }
+    .mediterranean-left {
+        width: 100%;
+        height: 21.875rem;
+    }
+    .mediterranean-right {
+        width: 100%;
+    }
+    .mediterranean-wrap {
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width:767px){
+    .container{
+        max-width: 700px;
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .site-banner {
+        height: 600px;
+    }
+    .banner-text h1 {
+        font-size: 3.5rem;
+    }
+    .banner-text p {
+        font-size: 1.2625rem;
+    }
+    .link-wrap {
+        height: 20rem;
+    }
+    .signup-heading h4 {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .signup-group {
+        width: 45%;
+    }
+    .site-heading h2 {
+        font-size: 2.2rem;
+    }
+    .why-icon {
+        width: 5.25rem;
+        height: 5.25rem;
+    }
+    .why-wrap {
+        padding: 3rem 1.275rem 2rem 1.275rem;
+    }
+    .newsletter-wrap {
+        padding: 3.125rem 2.7rem;
+    }
+    .newsletter-form {
+        max-width: 100%;
+    }
+    .sub-banner .banner-text h1 {
+        font-size: 2.8rem;
+    }
+    .site-banner.sub-banner {
+        height: 32rem;
+    }
+    .ptb-70 {
+        padding: 3rem 0;
+    }
+}
+
+
+@media(max-width:575px){
+    html{
+        font-size: 14px;
+    }
+    .banner-text h1 {
+        font-size: 3.2rem;
+    }
+    .signup-group {
+        width: 100%;
+    }
+    .newsletter-group {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .newsletter-group input {
+        width: 100%;
+    }
+    .newsletter-group button {
+        width: auto;
+        height: auto;
+        padding: 10px 30px;
+        margin-top: 20px;
+    }
+    .site-banner {
+        height: 550px;
+    }
+    .mediterranean-left {
+        height: 18rem;
+    }
+    .sub-banner .banner-text h1 {
+        font-size: 2.5rem;
+    }
+}
+@media(max-width:374px){
+    .site-header .navbar-brand {
+        width: 11.625rem;
+        height: 2.75rem;
+    }
+    .newsletter-wrap {
+        padding: 2.125rem 1.7rem;
+    }
+    .site-banner.sub-banner {
+        height: 30rem;
+    }
+    .site-heading h2 {
+        font-size: 2rem;
+    }
+}

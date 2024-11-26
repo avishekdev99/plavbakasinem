@@ -56,6 +56,29 @@
     .mediterranean-wrap {
         flex-wrap: wrap;
     }
+    .abt-wrap .row {
+        flex-direction: column;
+    }
+    .abt-wrap .sec-row{
+        flex-direction: column-reverse;
+    }
+    .abt-wrap .col-md-6{
+        width: 100%;
+    }
+    .abt-img {
+        height: 21.875rem;
+    }
+    .site-header .navbar-collapse {
+        padding: 25px 0;
+        background-color: #f6fbff;
+        margin-top: 15px;
+    }
+    .site-header ul.navbar-nav li {
+        padding: 0.9375rem;
+    }
+    .footer-wrap {
+        padding-left: 0px;
+    }
 }
 
 @media(max-width:767px){
@@ -167,4 +190,9 @@
     .site-heading h2 {
         font-size: 2rem;
     }
+    .abt-img {
+        height: 17.875rem;
+    }
 }
+
+

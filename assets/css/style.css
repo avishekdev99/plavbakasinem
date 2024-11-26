@@ -1080,9 +1080,72 @@ margin-bottom: 0.9375rem;
 .refund-banner{
     background-image: url(../images/refund-banner.jpg);
 }
-
+.about-banner{
+    background-image: url(../images/abt-banner.jfif);
+}
 
 /* sub banner css end */
-.link-sec, .site-footer{
+.link-sec, .site-footer, .contact-main {
     overflow: hidden;
+}
+
+.abt-img{
+    /* background-image: url(../images/caribbean-banner.jpg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.abt-one{
+    background-image: url(../images/abt-one.jpg);
+}
+.abt-two{
+    background-image: url(../images/abt-two.png);
+}
+.abt-three{
+    background-image: url(../images/abt-three.jpg);
+}
+.abt-four{
+    background-image: url(../images/abt-four.webp);
+}
+
+.abt-text {
+    padding: 1.5625rem;
+}
+.abt-text h3 {
+    font-size: 1.875rem;
+    font-weight: 600;
+    margin-bottom: 0.625rem;
+    color: #000;
+}
+.abt-text p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 0.9375rem;
+}
+.abt-wrap {
+    background: #f6fbff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 3.125rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.abt-wrap strong{
+    color: #000;
+}
+.abt-wrap ul{
+    padding-left: 1.25rem;
+    list-style: disc;
+}
+.abt-wrap ul li{
+    font-size: 1rem;
+    padding: 4px 0;
+    line-height: 1.5;
+}
+.abt-wrap ul li::marker{
+    color: #000;
+}
+.footer-wrap {
+    padding-left: 20px;
 }

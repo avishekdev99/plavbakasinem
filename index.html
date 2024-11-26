@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="cs">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,30 +16,30 @@
     <div class="site-header">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-              <a class="navbar-brand" href="index.html">LOGO</a>
+              <a class="navbar-brand" href="./">LOGO</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fa-solid fa-bars"></i>
               </button>
               <div class="collapse navbar-collapse " id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto">
               
                   <li class="nav-item">
-                    <a class="nav-link" href="mediterranean.html">Středozemní </a>
+                    <a class="nav-link" href="mediterranean">Středozemní </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="caribbean.html">Karibský </a>
+                    <a class="nav-link" href="caribbean">Karibský </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="casino.html">Kasino </a>
+                    <a class="nav-link" href="casino">Kasino </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="nordic.html">Nordický </a>
+                    <a class="nav-link" href="nordic">Nordický </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="about-us.html">O Nás </a>
+                    <a class="nav-link" href="about-us">O Nás </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="contact-us.html">Kontaktujte Nás </a>
+                    <a class="nav-link" href="contact-us">Kontaktujte Nás </a>
                   </li>
             
                 </ul>
@@ -89,7 +89,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6"  data-aos="fade-right">
                     <div class="link-wrap link-one">
-                        <a href="mediterranean.html">
+                        <a href="mediterranean">
                             <div class="link-text">
                                 <h3>
                                     Středozemní 
@@ -100,7 +100,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6" data-aos="fade-right">
                     <div class="link-wrap link-two">
-                        <a href="caribbean.html">
+                        <a href="caribbean">
                             <div class="link-text">
                                 <h3>
                                     Karibský
@@ -111,7 +111,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6"  data-aos="fade-left">
                     <div class="link-wrap link-three">
-                        <a href="casino.html">
+                        <a href="casino">
                             <div class="link-text">
                                 <h3>
                                     Kasino
@@ -122,7 +122,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6" data-aos="fade-left">
                     <div class="link-wrap link-four">
-                        <a href="nordic.html">
+                        <a href="nordic">
                             <div class="link-text">
                                 <h3>
                                     Nordický
@@ -169,7 +169,7 @@
                     <div class="signup-group">
                         <input 
                             type="email" 
-                            id="email" 
+                            id="emails" 
                             placeholder="E-mailová adresa" 
                             required
                         >
@@ -461,22 +461,22 @@
                         <div class="footer-links">
                             <ul>
                                 <li>
-                                    <a href="privacy-policy.html">
+                                    <a href="privacy-policy">
                                         Zásady ochrany osobních údajů
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="personal-information-policy.html">
+                                    <a href="personal-information-policy">
                                         Zásady osobních údajů
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="terms-and-conditions.html">
+                                    <a href="terms-and-conditions">
                                         Smluvní podmínky
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="refunds-policy.html">
+                                    <a href="refunds-policy">
                                         Zásady vrácení peněz
                                     </a>
                                 </li>
@@ -528,7 +528,7 @@
     document.getElementById('signupForm').addEventListener('submit', function(event) {
         const firstName = document.getElementById('firstName').value.trim();
         const lastName = document.getElementById('lastName').value.trim();
-        const email = document.getElementById('email').value.trim();
+        const email = document.getElementById('emails').value.trim();
         const country = document.getElementById('country').value;
 
         if (!firstName || !lastName || !email || !country) {

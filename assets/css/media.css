@@ -193,6 +193,10 @@
     .view-btns {
         text-align: center;
     }
+    .contact-wrap {
+        margin: 0 auto;
+        margin-bottom: 1.875rem;
+    }
 }
 @media(max-width:374px){
     .site-header .navbar-brand {

@@ -23,7 +23,7 @@
         flex-wrap: wrap;
     }
     .signup-group {
-        width: 47%;
+        width: 30%;
         margin: 10px;
     }
     .signup-btn {
@@ -69,15 +69,24 @@
         height: 21.875rem;
     }
     .site-header .navbar-collapse {
-        padding: 25px 0;
+        padding: 25px 50px;
         background-color: #f6fbff;
         margin-top: 15px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 99;
     }
     .site-header ul.navbar-nav li {
         padding: 0.9375rem;
     }
     .footer-wrap {
         padding-left: 0px;
+    }
+    .cruise-wrap-text h3 {
+        font-size: 1.575rem;
+        min-height: 58px;
     }
 }
 
@@ -105,7 +114,7 @@
         padding: 0 20px;
     }
     .signup-group {
-        width: 45%;
+        width: 100%;
     }
     .site-heading h2 {
         font-size: 2.2rem;
@@ -140,6 +149,9 @@
         text-align: center;
         margin-top: 10px;
     }
+    .cruise-wrap-text h3 {
+        min-height: auto;
+    }
 }
 
 
@@ -163,7 +175,7 @@
     .newsletter-group button {
         width: auto;
         height: auto;
-        padding: 10px 30px;
+        padding: 5px 30px;
         margin-top: 20px;
     }
     .site-banner {
@@ -174,6 +186,12 @@
     }
     .sub-banner .banner-text h1 {
         font-size: 2.5rem;
+    }
+    .site-header .navbar-collapse {
+        top: 50px;
+    }
+    .view-btns {
+        text-align: center;
     }
 }
 @media(max-width:374px){
@@ -192,6 +210,9 @@
     }
     .abt-img {
         height: 17.875rem;
+    }
+    .site-header .navbar-collapse {
+        top: 40px;
     }
 }
 
